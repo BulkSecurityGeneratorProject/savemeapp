@@ -1,0 +1,38 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "maSo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "hoTen",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "ngaySinh",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "gioiTinh",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "diaChi",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180130064720",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "ho_so_cn",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

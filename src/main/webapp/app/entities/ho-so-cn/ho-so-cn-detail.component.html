@@ -1,0 +1,42 @@
+
+<div *ngIf="hoSoCn">
+    <h2><span jhiTranslate="savemeappApp.hoSoCn.detail.title">Ho So Cn</span> {{hoSoCn.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="savemeappApp.hoSoCn.maSo">Ma So</span></dt>
+        <dd>
+            <span>{{hoSoCn.maSo}}</span>
+        </dd>
+        <dt><span jhiTranslate="savemeappApp.hoSoCn.hoTen">Ho Ten</span></dt>
+        <dd>
+            <span>{{hoSoCn.hoTen}}</span>
+        </dd>
+        <dt><span jhiTranslate="savemeappApp.hoSoCn.ngaySinh">Ngay Sinh</span></dt>
+        <dd>
+            <span>{{hoSoCn.ngaySinh | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span jhiTranslate="savemeappApp.hoSoCn.gioiTinh">Gioi Tinh</span></dt>
+        <dd>
+            <span>{{hoSoCn.gioiTinh}}</span>
+        </dd>
+        <dt><span jhiTranslate="savemeappApp.hoSoCn.diaChi">Dia Chi</span></dt>
+        <dd>
+            <span>{{hoSoCn.diaChi}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'ho-so-cn/'+ hoSoCn.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

@@ -1,0 +1,26 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "ma",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "ten",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180130070420",
+    "dto": "no",
+    "service": "serviceImpl",
+    "entityTableName": "dm_cqbh",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

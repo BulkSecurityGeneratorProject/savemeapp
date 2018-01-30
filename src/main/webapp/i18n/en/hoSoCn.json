@@ -1,0 +1,25 @@
+{
+    "savemeappApp": {
+        "hoSoCn" : {
+            "home": {
+                "title": "Ho So Cns",
+                "createLabel": "Create a new Ho So Cn",
+                "createOrEditLabel": "Create or edit a Ho So Cn"
+            },
+            "created": "A new Ho So Cn is created with identifier {{ param }}",
+            "updated": "A Ho So Cn is updated with identifier {{ param }}",
+            "deleted": "A Ho So Cn is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Ho So Cn {{ id }}?"
+            },
+            "detail": {
+                "title": "Ho So Cn"
+            },
+            "maSo": "Ma So",
+            "hoTen": "Ho Ten",
+            "ngaySinh": "Ngay Sinh",
+            "gioiTinh": "Gioi Tinh",
+            "diaChi": "Dia Chi"
+        }
+    }
+}
