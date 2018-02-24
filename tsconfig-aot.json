@@ -18,6 +18,6 @@
     },
     "angularCompilerOptions": {
         "genDir": "target/aot",
-        "skipMetadataEmit" : true
+        "skipMetadataEmit" : false
     }
 }

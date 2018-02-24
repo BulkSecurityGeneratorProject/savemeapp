@@ -2,21 +2,21 @@
     "savemeappApp": {
         "dmCqbh" : {
             "home": {
-                "title": "Dm Cqbhs",
-                "createLabel": "Thêm mới một Dm Cqbh",
-                "createOrEditLabel": "Thêm mới hoặc cập nhật Dm Cqbh"
+                "title": "Danh mục cơ quan BHXH",
+                "createLabel": "Thêm mới một cơ quan BHXH",
+                "createOrEditLabel": "Thêm mới hoặc cập nhật cơ quan BHXH"
             },
-            "created": "Một Dm Cqbh mới được tạo với định danh {{ param }}",
-            "updated": "Một Dm Cqbh cập nhật với định danh {{ param }}",
-            "deleted": "Một Dm Cqbh đã xóa với định danh {{ param }}",
+            "created": "Một cơ quan BHXH mới được tạo với định danh {{ param }}",
+            "updated": "Một cơ quan BHXH cập nhật với định danh {{ param }}",
+            "deleted": "Một cơ quan BHXH đã xóa với định danh {{ param }}",
             "delete": {
-                "question": "Bạn có chắc là muốn xóa Dm Cqbh {{ id }}?"
+                "question": "Bạn có chắc là muốn xóa cơ quan BHXH {{ id }}?"
             },
             "detail": {
-                "title": "Dm Cqbh"
+                "title": "Danh mục cơ quan BHXH"
             },
-            "ma": "Ma",
-            "ten": "Ten"
+            "ma": "Mã",
+            "ten": "Tên"
         }
     }
 }

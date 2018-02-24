@@ -23,7 +23,6 @@ export class DmCqbhService {
 
     update(dmCqbh: DmCqbh): Observable<DmCqbh> {
         const copy = this.convert(dmCqbh);
-        console.log(copy);
         return this.http.put(this.resourceUrl, copy).map((res: Response) => {
             const jsonResponse = res.json();
             return this.convertItemFromServer(jsonResponse);
@@ -39,6 +38,7 @@ export class DmCqbhService {
 
     query(req?: any): Observable<ResponseWrapper> {
         const options = createRequestOption(req);
+        console.log(req);
         return this.http.get(this.resourceUrl, options)
             .map((res: Response) => this.convertResponse(res));
     }
@@ -49,7 +49,9 @@ export class DmCqbhService {
 
     private convertResponse(res: Response): ResponseWrapper {
         const jsonResponse = res.json();
+        console.log(jsonResponse);
         const result = [];
+        /*let: The let statement declares a block scope local variable, optionally initializing it to a value.*/
         for (let i = 0; i < jsonResponse.length; i++) {
             result.push(this.convertItemFromServer(jsonResponse[i]));
         }
@@ -60,6 +62,7 @@ export class DmCqbhService {
      * Convert a returned JSON object to DmCqbh.
      */
     private convertItemFromServer(json: any): DmCqbh {
+        console.log(json);
         const entity: DmCqbh = Object.assign(new DmCqbh(), json);
         return entity;
     }
